@@ -1,18 +1,58 @@
+
+
 .main
 {
+  margin: 0px;
+  padding: 0px;
+
   background: black;
   font: cursive;
   color: white;
-  padding-top: 10px;
-  padding-left: 30px;
+  padding-top: 5px;
+  padding-left: 20px;
 
+}
+
+.header
+{
+  text-align: center;
+ 
+}
+
+.header > h1
+{
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgba(57,95,87,255);
 }
 
 .header > img
 {
-  padding-left: 160px;
+  display: inline-block;
   height: 150px;
   width: 350px;
+}
+
+.sub-title
+{
+  background-color: rgba(57,95,87,255);
+  margin-right: 20px;
+margin-top: 5px; 
+font-size: 18px;
+text-align: left;
+padding: 5px;
+
+}
+
+.instructions > p > a
+{
+  color: white;
+  font-weight: bold;
+ 
+}
+
+.sub-title > a
+{
+  color: white;
 }
 
 .icon1
@@ -24,67 +64,22 @@
 {
   font-style: italic;
 }
-.top-section
-{
-  border-bottom: 3px solid rgba(57,95,87,255);
-}
 
 
-.navbar-nav
-{
-  list-style-type: none;
-  display: flex;
-}
-
-.nav-item-active
-{
-  border-right: 2px dotted rgba(57,95,87,255);
-  
-   
-  height: 45px;
-  line-height: 45px;
-   font-size: larger;
-   font-weight: bolder;
-  width: 25%;
-  text-align: center;
-  color: rgba(57,95,87,255);
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.nav-item-inactive
-{
-  font-size: larger;
-  font-weight: bolder;
-padding-left: 15px;
-padding-right: 15px;
-  border-right: 2px dotted rgba(57,95,87,255);
-  height: 10px;
-  height: 45px;
-line-height: 45px;
-
-  width: 25%;
-  text-align: center;
-color: white;
-}
-
-a
-{
-  color: white;
-  text-decoration: none;
-}
 
 .item
 {
   display: none;
 }
 
+
 label {
   border: 1px solid rgba(57,95,87,255);
   padding: 10px;
+  padding-bottom: 5px;
   display: block;
   position: relative;
-  margin: 10px;
+  margin: 6px;
   cursor: pointer;
 }
 
@@ -107,7 +102,7 @@ label::before {
 }
 
 label img {
-  height: 100px;
+  height: 90px;
   width: 120px;
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
@@ -129,23 +124,17 @@ label img {
   z-index: -1;
 }
 
-.sub-header
-{
-  background-image: url(bkgrnd-img.jpg);
-}
 
 .quiz-response
 {
- background-image: url(bkgrnd-img.JPG);
+ background-image: url(./images/bkgrnd-img.JPG);
   display: flex;
   flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
 }
 
-.form
-{
-  display: flex;
-  flex-direction: row;
-}
 
 .submit
 {
@@ -156,14 +145,19 @@ label img {
   font-size: larger;
   margin-top: 180px;
   border-radius: 15px;
+  border: 1px solid #ddd;
 }
 .quiz-options
 {
+
   list-style-type: none;
   
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr 1fr;
+
+ /*  grid-template-columns: auto;*/
   grid-template-rows: auto;
+  
 
 }
 
@@ -173,6 +167,7 @@ label img {
   padding: 0px;
   margin: 0px;
   margin-top: 30px;
+
 }
 
 p
@@ -188,36 +183,72 @@ height: 220px;
   transform: translateY(0);
   animation: mood1 5s infinite;
 }
-@keyframes mood {
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
-}
 
 .neutral-mood {
   margin-top: 20px;
 
-  background-image: url(man-neutral1.JPG)
+  background-image: url(./Images/man-neutral1.JPG)
 }
 
 
 .mood-disappointed {
-  background-image: url(Man-too_strong.gif);
+  background-image: url(./Images/Man-too_strong.gif);
   margin-top: 10px;
 }
 
 .mood-silly {
-  background-image: url(man-missed-basic.gif);
+  background-image: url(./Images/man-missed-basic.gif);
   margin-top: 10px;
 }
 
 .mood-upset {
-  background-image: url(man-without-alc.gif);
+  background-image: url(./Images/man-without-alc.gif);
   margin-top: 10px;
 }
 
 .mood-applause {
-  background-image: url(man-applause.gif);
+  background-image: url(./Images/man-applause.gif);
   margin-top: 10px;
   height: 106px;
 
+}
+
+
+
+@media screen and (min-width: 1920px) {
+  .calculator {
+    width: 275px;
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+/* Tutorial classes*/
+.cocktail-pic > img
+{
+  height: 250px ;
+  width: 200px ;
+  margin: 20px;
+  margin-right: 100px;
+}
+
+.Tutorial-section
+{
+ display: flex;
+ flex-direction: row; 
+ align-items: center;
+}
+
+.tutorial-title
+{
+  text-align: center;
+}
+
+.recipe > ul
+{
+  list-style-type: none;
+}
+
+.tutorial-item{
+  margin: 10px;
 }
