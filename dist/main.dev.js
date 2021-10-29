@@ -30,7 +30,7 @@ var masterList = [{
   "text": "Coconut Cream"
 }, {
   "id": "pa",
-  "img": "../images/pineapple1.jpg",
+  "img": "../images/pineapple2.jpg",
   "text": "Pineapple Juice"
 }, {
   "id": "cn",
@@ -38,7 +38,7 @@ var masterList = [{
   "text": "Cointreau"
 }, {
   "id": "pf",
-  "img": "../images/passion-fruit.jpg",
+  "img": "../images/passionfruit2.jpg",
   "text": "Passion Fruit"
 }, {
   "id": "vd",
