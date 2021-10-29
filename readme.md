@@ -1,37 +1,34 @@
-CalcValue
-CalcValue is a calculator that supports basic arithmatic operations and provides 2 layouts to choose from. The first one is an attempt to mimic the layout of iPhone calculator whereas the second is a layout designed by me.
 
-Functionality
-CalcValue performs the following operations:
+What's in the Drink? Challenge
+==============================================================
 
-Addition
-Subtraction
-Multiplication
-Division
-Percentage of a number
-Negate of a number
-The calculator supports operations even on a series of inputs. At every input, it calculates the answer.
+'What's in the Drink' is a game developed to test a user's knowledge about some of the world's most popular cocktails. There are 8 cocktails currently available. User has to select the correct ingrediants and submit the response. There is also a Tutorial section prepared that helps the user to know the key ingrediants that go in these cocktails. 
 
-Special Features:
-There are 2 output screens provided to show the inputs being entered as well as to show the calculated value at any point.
 
-There is also a PLAY button available that uses a TextToSpeech service. This is very useful in case user provides long calculations and wants to tally that again with the help of audio.
+How to Play?
+-------------------------
+On the Home page, user has to select a cocktail. Once the user is on the Cocktail specific page, he/she is expected to select the main ingrediants that go in the cocktail and submit the response. There is a judge who provides clues in case of incorrect responses like missed basic ingrediants, additional ones present, key ingredients missing. 
 
-There is a toggle button available to switch between the layouts. Both the layouts are synced. So, the user can choose to toggle at any given point.
+During every challenge, there is a Tutorial link shown on the page. On clicking, the user can go to the ingredients of the specific cocktail to brush up the bartending skills and come back to take the challenge. 
 
-Calc Demo
 
-Features currently not supported:
-BODMAS
-Storing of results in cache
-Technologies Used:
-CalcValue has been built using Javascript, HTML and CSS. It has also been tested using Cybress Testing framework.
 
-Scenarios covered:
-The following scenarios have also been taken care of in terms of handling user input:
+Technologies Used: 
+-------------------------
 
-If a decimal has already been added to a number, clicking decimal again does nothing.
-After an operation key (+,-,*,/), it is not possible to use another operation key and user will be forced to enter a numeric key in order to proceed
-After user clicks negate and percentage, only the last number entered is affected. User cannot enter another numeric key immediately after negate and percentage are used. Operation key will have to be used in order to proceed.
+The game has been built using Javascript, HTML, CSS, DOM.  
+
+
+Design:
+-------------------------
+
+As the game needed volume, the functions are very reusable. There is no Cocktail specific function that has been written. Most of the HTML is rendered dynamically. The logic for different responses (GIFs and response message) is reusable as well. There is an array of objects for the Master List of Ingredients. Additionally, primary and secondary ingredients are defined in the Javascript for every cocktail. These values are then passed to the reusable functions. 
+
+
+
 Acknowledgements:
-The project has been built as part of the training program with Nology. Many thanks to Yujin and Sam for the amazing training they have been providing. The project would not have been accomplised had it not been for their valuable inputs and support.
+-------------------------
+
+The project has been built as part of the training program with Nology. Many thanks to Yujin and Sam for the amazing training they have been providing. The project would not have been accomplised had it not been for their valuable inputs and support. 
+
+The recipes from BBCFoods and JamieOliver website have been referred in order to create the underlying data. 
