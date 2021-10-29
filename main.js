@@ -47,7 +47,7 @@ let masterList = [
   "text": "Cointreau",
 },
 {"id": "pf",
-  "img": "../images/passionfruit.jpg",
+  "img": "../images/passion-fruit.jpg",
   "text": "Passion Fruit",
 },
 {"id": "vd",
