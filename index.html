@@ -3,79 +3,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cocktail Maker Game</title>
+ 
+  <link rel = "icon" href = "../images/cocktail_icon.JPG"> 
+  <title>What's in the Drink?</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 <link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="./quiz-options.css">
+<link rel="stylesheet" href="./tutorial.css">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?&family=Rubik:wght@300&family=Pacifico&display=swap');
+  </style>
+
+
 <script src="https://kit.fontawesome.com/07867755f9.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <div class="main">
-    <div class="Header">
- <div class="top-section">
-  <h1 class = "main-title"><span class="specific-word">Cocktail </span>Making Challenge</h1> </div>
-  <br>
-  <img src = "Img_Header1.JPG" alt = "Cocktails" width = "400px">
-    
-    <nav>
-      <ul class="navbar-nav">
-      
-        <li><a href="index.html" class="nav-item-active ">Try Margarita</a></li> </span>
-       
-       <li><a href="second.html" class="nav-item-inactive">Try Pina Colada</a></li>
-     
- <li><a href="tutorial.html" class="nav-item-inactive">Tutorial</a></li> 
-               
-      </ul>
-    </nav>
-    <div class="sub-header">
- <div class="instructions">
-    <p>Do you think you have the skills to make a good cocktail? If so, select the ingrediants that you would use to make a CLASSIC MARGERITA <i class="fas fa-cocktail icon1"></i>, click Submit to find out if our judge thinks so too! You might want to visit our <div id="tutoriallink">Tutorial</div> to brush up your skills first. </p>
-  </div>
-</div>
-</div>
-<div class="quiz-response">
-  <form id="form" class="form">
-    <div class="quiz">
-   
-              <ul class="quiz-options">
- 
-      <div>    <li><input type="checkbox" id="cn" class="item" value="cn" />
-            <label for="cn"><img src="Cointreau.JPG" alt="Cointreau"></label>
-          </li></div>
-        <div>  <li><input type="checkbox" id="cc" class="item" value="cc" />
-            <label for="cc"><img src="Coconut.JPG" alt="Coconut Cream"></label>
-          </li></div>
-        <div> <li><input type="checkbox" id="ic" class="item" value="ic" />
-            <label for="ic"><img src="Ice.JPG" alt="Ice"></label>
-          </li> </div>
-        <div>          <li><input type="checkbox" id="lj" class="item" value="lj" />
-            <label for="lj"><img src="Lime_Juice.JPG" alt="Lime Juice"></label>
-          </li></div>
-          <div><li><input type="checkbox" id="pa" class="item" value="pa" />
-            <label for="pa"><img src="Pineapple.JPG" alt="Pineapple Juice"></label>
-          </li></div>
-         <div> <li><input type="checkbox" id="rm" class="item" value="rm" />
-            <label for="rm"><img src="Rum.JPG" alt="Rum"></label>
-          </li></div>
-        <div><li><input type="checkbox" id="sg" class="item" value="sg" />
-            <label for="sg"><img src="Sugar.JPG" /></label>
-          </li></div>
-        <div><li><input type="checkbox" id="tq" class="item" value="tq" />
-            <label for="tq"><img src="Tequila.JPG" /></label>
-          </li>
-                </ul></div>
-<div>        <button class="submit"> Submit</button> </div>
-                </form>
-               
-         <div class="response"><p id="message"></p>
-                  <div id="mood" class="mood neutral-mood">
-                      
-                  </div>
 
-        </div>    
-    </div>
-    </div>
+<body>
+  <div>
+    <div class="header">
+  <div class = "main__heading"><a  href="../index.html">Find out -  What's in the <span class="main__heading--cursive"> Drink?</span> </a><i class='fas fa-cocktail cocktail-icon fa-2x'></i></div>
  
-    <script src = "main.js"></script>
+  <div class="game-desc">
+  Do you think you know enough about the most popular cocktails of the world? <br><br> Click on the cocktails below to find out. <br> <br> Visit our <a style="color: white" text-decoration: none; href="Html/tutorial.html">Tutorial</a> to improve your bartending skills. </div>
+</div> <!--header closing-->
+
+<div class="content1">
   
+  <div class="Cocktail-section">
+    <a href="Html/cosmopolitan.html">
+    <img class="cocktail-img" src="./images/Cosmopolitan.jpg" alt="Cosmopolitan"></a>
+    <div class="img-text">Cosmopolitan</div>
+  </div>
+  <div class="Cocktail-section">
+    <a href="Html/daiquiri.html">
+    
+    <img class="cocktail-img
+    " src="./images/Daiquiri.jpg" alt="Daiquiri"></a>
+    <div class="img-text">Daiquiri</div>
+  
+  </div>
+  <div class="Cocktail-section">
+    <a href="./Html/margarita.html">
+    <img class="cocktail-img" src="./images/Margarita.jpg" alt="Margarita"></a>
+    <div class="img-text">Margarita</div>
+  </div>
+  <div class="Cocktail-section">
+    <a href="./Html/martini.html">
+    <img class="cocktail-img" src="./images/Martini.jpg" alt="Martini"></a>
+    <div class="img-text">Martini</div>
+ </div>
+  <div class="Cocktail-section">
+    <a href="./Html/mojito.html">
+    <img class="cocktail-img" src="./images/Mojito.jpg" alt="Mojito"></a>
+    <div class="img-text">Mojito</div>
+  </div>
+  <div class="Cocktail-section">
+    <a href="Html/moscowmule.html">
+    <img class="cocktail-img" src="./images/MoscowMule.webp" alt="Moscow Mule"></a>
+    <div class="img-text">Moscow Mule</div>
+  </div>
+  <div class="Cocktail-section">
+    <a href="Html/oldFashioned.html">
+    <img class="cocktail-img" src="./images/OldFashioned.jpg" alt="Old Fashioned"></a>
+    <div class="img-text">Old Fashioned</div>
+  </div>
+  <div class="Cocktail-section">
+    <a href="Html/pinaColada.html">
+    <img class="cocktail-img" src="./images/PinaColada.jpg" alt="PinaColada"></a>
+    <div class="img-text">Pina Colada</div>
+  </div>
+ 
+
+</div> 
+</div>
 </body>
 </html>

@@ -1,56 +1,66 @@
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="../index.css">
-<link rel = "icon" href = "../images/cocktail_icon.JPG"> 
-<title>What's in the Drink?</title>
-
-
-
-<script src="https://kit.fontawesome.com/07867755f9.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="main">
-    <div class="header">
-  <div class = "sub-title"><a  href="../index.html"><span class="specific-word"> Cocktail </span>Making Challenge</a></div>
- 
-</span>
-  <h2 id="cocktailName" class="cocktailName"></h2>
- 
-    
-  <div class="instructions">
-    <p id="instructions"></p>
-    <p>Visit our <a id="tutoriallink">tutorial</a> to brush up your skills.</p>
-</div>
-
-</div> <!--closing header-->
-
-
-<form id="form" class="form">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel = "icon" href = "../images/cocktail_icon.JPG"> 
+    <title>What's in the Drink?</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../quiz-options.css">
   
-  <div class="quiz-response">
-    <div>
-       <ul class="quiz-options"  id="quiz-options">
-       </ul>
-       <div dislay="none" id="hide">  </div> <!--new code --> 
-    </div>
-    <div>
-       <button class="submit">Submit</button>
-    </div>
-</form>
-           
-    <div class="response"><p id="message"></p>
-              <div id="mood" class="mood neutral-mood">
-              </div>
-
-    </div>    <!--closing response-->
-  </div> <!--closing quiz response-->
-</div> 
- 
-    <script src = "../JS/mojito.js"></script>
-    <script src = "../main.js"></script>
-</body>
-</html>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?&family=Rubik:wght@300&family=Pacifico&display=swap');
+    </style>
+  
+    <script src="https://kit.fontawesome.com/07867755f9.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+      <div class="header">
+        <div class = "main__heading">
+          <a  href="../index.html"><i class="fas fa-home"></i>   What's in the <span class="main__heading--cursive"> Drink?</span> </a><i class='fas fa-cocktail cocktail-icon fa-2x'></i>
+        </div>
+   
+         <h2 class="main__heading--sub">Mojito</h2>
+      </div> <!--header closing-->
+  
+      <div class="main">
+  
+        <div class="instructions__section">
+          <p id="instructions"></p>
+          <p>Visit our <a id="tutoriallink">tutorial</a> to brush up your skills.</p>
+        </div>
+  
+        <form id="form" class="form">
+    
+        <div class="main__quizresponse">
+          <div>
+            <ul class="quiz__section"  id="quiz-options">
+            </ul>
+              <div dislay="none" id="hide">
+              </div> 
+          </div>
+  
+          <div>
+              <i class="material-icons shaker " style="font-size:120px;color:rgba(57,95,87,255);"><span class="material-icons-outlined">
+              blender
+              </span></i> <br>
+              <button class="submit">Submit</button> 
+          </div>
+        </form>
+             
+          <div class="response__section"><p id="message"></p>
+                <div id="mood" class="mood neutral-mood">
+                </div>    
+  
+          </div>    <!--closing response-->
+        </div> <!--closing quiz response-->
+      </div> 
+  
+      <script src = "../JS/mojito.js"></script>
+      <script src = "../main.js"></script>
+  </body>
+  </html>

@@ -1,63 +1,9 @@
-//on load and on submit
+//console.log("Cheat answer for testing- Alternative is tutorial now");
+//console.log(IngArr);
 
-console.log("Cheat answer for testing- to be removed");
-console.log(IngArr);
 let form = document.getElementById('form');
 
-window.addEventListener('load',(e) => {
-  //  e.preventDefault();
-
-
-  let tutorial = document.getElementById('tutoriallink');
-  tutorial.setAttribute('href',link);
-   let h2 = document.getElementById('cocktailName');
-  
-  h2.innerHTML = name ;
-
-  let instr = document.getElementById('instructions');
-  
-  instr.innerHTML = "Select the ingrediants that you would use to make this <i class='fas fa-cocktail icon1'></i> and click Submit to find out what our judge thinks about it!<br/>"; 
-let RecIng = getIngList(IngArr)
-let  extIng = getExtraList(IngArr)
-
-  let listIng = RecIng.concat(extIng)
-  const shuffled = listIng.sort(() => Math.random() - 0.5)
-  populateKeyIng(shuffled);
-
-
-  let listIngIDs = listIng.map((element) =>  element.id
-  );
-  let MasterListIDs = masterList.map((element) =>  element.id
-  );
-
-
-  let RemgIng = MasterListIDs.filter(element => !(listIngIDs.includes(element)))
-
-    
-
-  declareRemgIng(RemgIng)
-  })
-  
-
-  form.addEventListener('submit',(e) => {
-
-    e.preventDefault();
-    
-      let inputArr = []; 
-  
-  inputArr = getInputArray();
-  
-  
-  
-      let mainIngAct = inputArr.filter(element => mainIngExp.includes(element));
-      let suppIngAct = inputArr.filter(element => suppIngExp.includes(element));
-  
-      detResponse(IngArr, mainIngExp, suppIngExp, mainIngAct, suppIngAct,inputArr);
-  })
-  
-
-//Master List
-
+//Master List of Ingrediensts
 
 let masterList = [
   {
@@ -150,18 +96,66 @@ let masterList = [
 },
 {"id": "ab",
   "img": "../images/angostura.jpg",
-  "text": "Angostura bitters",
+  "text": "Bitters",
 },
 
 ]
 
+/*load page dynamically with correct and 
+random incorrect options*/
+
+window.addEventListener('load',(e) => {
+  //  e.preventDefault();
+
+  let tutorial = document.getElementById('tutoriallink');
+  tutorial.setAttribute('href',link);
+
+  let instr = document.getElementById('instructions');
+  
+  instr.innerHTML = "Identify the main ingredients that you would use to make this<i class='fas fa-cocktail cocktail-icon'></i> and click Submit.";
+
+let RecIng = getIngList(IngArr)
+let  extIng = getExtraList(IngArr)
+
+  let listIng = RecIng.concat(extIng)
+  const shuffled = listIng.sort(() => Math.random() - 0.5)
+  populateKeyIng(shuffled);
+
+  let listIngIDs = listIng.map((element) =>  element.id);
+  let MasterListIDs = masterList.map((element) =>  element.id);
+
+  let RemgIng = MasterListIDs.filter(element => !(listIngIDs.includes(element)))
+
+  declareRemgIng(RemgIng)
+  })
+  
+
+/*Evaluate Response based on inputs selected */
+  form.addEventListener('submit',(e) => {
+
+    e.preventDefault();
+    let inputArr = []; 
+  
+  inputArr = getInputArray();
+  
+      let mainIngAct = inputArr.filter(element => mainIngExp.includes(element));
+      let suppIngAct = inputArr.filter(element => suppIngExp.includes(element));
+  
+      detResponse(IngArr, mainIngExp, suppIngExp, mainIngAct, suppIngAct,inputArr);
+  })
+  
+
+
 //Reusable Functions
+
+/*Set Response GIF*/
 function setPersonMood(mood) {
   document.getElementById('mood').classList.remove('neutral-mood','mood-upset','mood-disappointed','mood-silly','mood-applause');
   console.log(mood);
   document.getElementById('mood').classList.add('mood-' + mood);
   }
 
+/*Fetch options selected by user*/
 function getInputArray()
 {
 let checkval = [];
@@ -242,21 +236,18 @@ if (ab.checked){
 return checkval;
 }
 
+/*Determine response based on Expected and Actual values*/
 function detResponse(ingExp, mainIngExp, suppIngExp, mainIngAct, suppIngAct,inputArr)
 {
 message = document.getElementById('message');
 
-console.log("Determining Response");
+/*console.log("Determining Response");
 console.log(inputArr);
-
 console.log(mainIngAct);
 console.log(suppIngAct);
 console.log(mainIngExp);
 console.log(suppIngExp);
-if(inputArr.length == 0) {
-  message.innerHTML = "You forgot to select your ingrediants for the cocktail!";
-
-}
+*/
 
 inputArr.sort();
 ingExp.sort();
@@ -265,10 +256,9 @@ mainIngExp.sort();
 suppIngAct.sort();
 suppIngExp.sort();
 
-//   if (inputArr.toString() == "rm,sg,lj,mn")
 if (inputArr.length == 0)
 {
-  message.innerHTML = "You forgot to select your ingrediants for the cocktail!";
+  message.innerHTML = "No ingredient selected! <br><br>Select and click on submit.";
 }
 
 else if (inputArr.toString() == ingExp.toString())
@@ -286,18 +276,19 @@ setPersonMood('upset');
 else
 if (suppIngAct.toString() != suppIngExp.toString())
 {
-message.innerHTML = "I can't believe you could miss this. Take a closer look!";
+message.innerHTML = "I can't believe you could miss this.<br><br> Take a closer look!";
 setPersonMood('silly');
 
 }
 else
 {
-message.innerHTML = "Not quite there yet! You have some additional ones";
+message.innerHTML = "Not quite there yet! <br> <br> You have some additional ones";
 setPersonMood('disappointed');
 }
 
 }
 
+/*Below functions are used to dynamically populate correct and incorrect ptions on page*/
 function populateKeyIng(RecIng)
 {
 let ul = document.getElementById('quiz-options');
@@ -323,6 +314,7 @@ answerLabel.setAttribute('class', 'li1');
 
 let img = document.createElement("img");
 img.setAttribute('src',img1 );
+img.setAttribute('class','ingIcon');
 answerLabel.appendChild(img);
 answerLabel.appendChild(document.createElement('br'));
 answerLabel.appendChild(document.createTextNode(text1));
@@ -335,6 +327,7 @@ ul.appendChild(div);
 });
 
 }
+
 
 function getIngList(Ing)
 {
