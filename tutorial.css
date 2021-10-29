@@ -1,31 +1,23 @@
 /* Tutorial classes*/
-.cocktail-pic > img
-{
-  height: 250px ;
-  width: 200px ;
+.cocktail-pic img {
+  height: 250px;
+  width: 200px;
   margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 100px;
 }
 
-.Tutorial-section
-{
- display: flex;
- flex-direction: row; 
- align-items: center;
+.Tutorial-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.tutorial-title
-{
-  text-align: center;
-}
-
-.recipe > ul
-{
+.recipe > ul {
   list-style-type: none;
 }
 
-.tutorial-item{
+.tutorial-item {
   margin: 10px;
 }

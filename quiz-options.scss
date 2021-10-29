@@ -1,6 +1,5 @@
-@charset "UTF-8";
 label {
-  border: 1px solid #395f57;
+  border: 1px solid rgba(57,95,87,255);
   padding: 10px;
   padding-bottom: 5px;
   display: block;
@@ -34,17 +33,17 @@ label img {
   transform-origin: 50% 50%;
 }
 
-:checked + label {
-  border-color: #395f57;
+:checked+label {
+  border-color: rgba(57,95,87,255);
 }
 
-:checked + label::before {
+:checked+label::before {
   content: "✓";
-  background-color: #395f57;
+  background-color: rgba(57,95,87,255);
   transform: scale(1);
 }
 
-:checked + label img {
+:checked+label img {
   transform: scale(0.9);
   box-shadow: 0 0 5px #333;
   z-index: -1;
