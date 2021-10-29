@@ -1,5 +1,12 @@
 /* Tutorial classes*/
-.cocktail-pic 
+
+.Tutorial-section
+{
+ display: flex;
+ flex-direction: row; 
+ align-items: center;
+
+ .cocktail-pic 
 {
   img
 {
@@ -12,19 +19,20 @@
 }
 }
 
-.Tutorial-section
+.recipe 
 {
- display: flex;
- flex-direction: row; 
- align-items: center;
-}
-
-
-.recipe > ul
-{
-  list-style-type: none;
-}
-
-.tutorial-item{
+  ul
+  {
+    list-style-type: none;
+    
+  .tutorial-item{
   margin: 10px;
+   }
+
+  }
+  
 }
+
+}
+
+

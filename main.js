@@ -112,7 +112,7 @@ window.addEventListener('load',(e) => {
 
   let instr = document.getElementById('instructions');
   
-  instr.innerHTML = "Identify the main ingredients that you would use to make this<i class='fas fa-cocktail cocktail-icon'></i> and click Submit.";
+  instr.innerHTML = "Identify the main ingredients that you would use to make this<i class='fas fa-cocktail cocktail-icon'></i> , blend and then click Submit.";
 
 let RecIng = getIngList(IngArr)
 let  extIng = getExtraList(IngArr)
@@ -282,7 +282,7 @@ setPersonMood('silly');
 }
 else
 {
-message.innerHTML = "Not quite there yet! <br> <br> You have some additional ones";
+message.innerHTML = "Not quite there yet! <br> <br> You have some additional ones.";
 setPersonMood('disappointed');
 }
 

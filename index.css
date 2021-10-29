@@ -7,15 +7,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.header {
+body .header {
   padding: 20px;
   padding-bottom: 0px;
   text-align: center;
   margin-bottom: 0px;
 }
-
-.header > h2 {
+body .header h2 {
   padding-bottom: 10px;
   padding-top: 10px;
   border-bottom: 3px solid #395f57;
@@ -23,25 +21,7 @@ body {
   letter-spacing: 4px;
   margin-bottom: 0px;
 }
-
-.game-desc {
-  padding-bottom: 30px;
-  padding-top: 30px;
-  border-bottom: 3px solid #395f57;
-  border-top: 3px solid #395f57;
-  letter-spacing: 1.5px;
-  word-spacing: 3px;
-  margin-bottom: 0px;
-  font-weight: bolder;
-  font-size: 18px;
-}
-
-.cocktail-icon {
-  color: #395f57;
-  margin-left: 15px;
-}
-
-.main__heading {
+body .header .main__heading {
   background-color: black;
   margin-top: 5px;
   text-align: left;
@@ -50,10 +30,17 @@ body {
   letter-spacing: 3px;
   word-spacing: 6px;
 }
-
-.main__heading > a {
+body .header .main__heading a {
   color: white;
   text-decoration: none;
+}
+body .header .main__heading--sub {
+  text-align: center;
+}
+
+.cocktail-icon {
+  color: #395f57;
+  margin-left: 15px;
 }
 
 .main__heading--cursive {
@@ -61,22 +48,16 @@ body {
   letter-spacing: 2px;
 }
 
-.main__heading--sub {
-  text-align: center;
-}
-
 .instructions__section {
   padding-top: 10px;
 }
-
-.instructions__section > p {
+.instructions__section p {
   word-spacing: 5px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
-
-.instructions__section > p > a {
+.instructions__section p a {
   color: white;
   font-weight: bold;
   letter-spacing: 3px;
@@ -162,10 +143,6 @@ body {
   margin: 0px;
   letter-spacing: 1.5px;
   word-spacing: 4px;
-}
-
-p {
-  font-size: 18px;
 }
 
 .mood {
