@@ -6,39 +6,39 @@ var form = document.getElementById('form'); //Master List of Ingrediensts
 
 var masterList = [{
   "id": "rm",
-  "img": "../images/Rum.jpg",
+  "img": "../images/rum.jpg",
   "text": "Rum"
 }, {
   "id": "sg",
-  "img": "../images/Sugar.jpg",
+  "img": "../images/sugar.jpg",
   "text": "Sugar"
 }, {
   "id": "lj",
-  "img": "../images/Lime_Juice.jpg",
+  "img": "../images/limejuice.jpg",
   "text": "Lime Juice"
 }, {
   "id": "mn",
-  "img": "../images/MintLeaves.jpg",
+  "img": "../images/mintleaves.jpg",
   "text": "Mint"
 }, {
   "id": "tq",
-  "img": "../images/Tequila.jpg",
+  "img": "../images/tequila.jpg",
   "text": "Tequila"
 }, {
   "id": "cc",
-  "img": "../images/Coconut.jpg",
+  "img": "../images/coconut.jpg",
   "text": "Coconut Cream"
 }, {
   "id": "pa",
-  "img": "../images/Pineapple.jpg",
+  "img": "../images/pineapple.jpg",
   "text": "Pineapple Juice"
 }, {
   "id": "cn",
-  "img": "../images/Cointreau.jpg",
+  "img": "../images/cointreau.jpg",
   "text": "Cointreau"
 }, {
   "id": "pf",
-  "img": "../images/passion-fruit.jpg",
+  "img": "../images/passionfruit.jpg",
   "text": "Passion Fruit"
 }, {
   "id": "vd",
@@ -54,7 +54,7 @@ var masterList = [{
   "text": "Cranberry"
 }, {
   "id": "ps",
-  "img": "../images/Passoa.jpeg",
+  "img": "../images/passoa.jpeg",
   "text": "Passoa"
 }, {
   "id": "ci",
@@ -62,7 +62,7 @@ var masterList = [{
   "text": "Cinnamon"
 }, {
   "id": "ms",
-  "img": "../images/maple-syrup.webp",
+  "img": "../images/maplesyrup.webp",
   "text": "Maple Syrup"
 }, {
   "id": "cj",
