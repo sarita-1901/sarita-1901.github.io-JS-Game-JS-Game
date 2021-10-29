@@ -8,12 +8,12 @@ let form = document.getElementById('form');
 let masterList = [
   {
     "id": "rm",
-    "img": "../images/rum.jpg",
+    "img": "../images/rum1.jpg",
     "text": "Rum",
   },
   {
     "id": "sg",
-    "img": "../images/sugar.jpg",
+    "img": "../images/sugar1.jpg",
     "text": "Sugar",
   },
   {
@@ -23,27 +23,27 @@ let masterList = [
   },
   {
     "id": "mn",
-    "img": "../images/mintleaves.jpg",
+    "img": "../images/mintleaves1.jpg",
     "text": "Mint",
   },  
 {
   "id": "tq",
-  "img": "../images/tequila.jpg",
+  "img": "../images/tequila1.jpg",
   "text": "Tequila",
 },
 {
   "id": "cc",
-  "img": "../images/coconut.jpg",
+  "img": "../images/coconut1.jpg",
   "text": "Coconut Cream",
 },
 {
   "id": "pa",
-  "img": "../images/pineapple.jpg",
+  "img": "../images/pineapple1.jpg",
   "text": "Pineapple Juice",
 },
 {
   "id": "cn",
-  "img": "../images/cointreau.jpg",
+  "img": "../images/cointreau1.jpg",
   "text": "Cointreau",
 },
 {"id": "pf",
@@ -63,7 +63,7 @@ let masterList = [
   "text": "Cranberry",
 },
 {"id": "ps",
-  "img": "../images/passoa.jpeg",
+  "img": "../images/passoa1.jpeg",
   "text": "Passoa",
 },
 {"id": "ci",
