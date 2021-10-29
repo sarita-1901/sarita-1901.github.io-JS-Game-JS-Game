@@ -145,6 +145,18 @@ body .header .main__heading--sub {
   word-spacing: 4px;
 }
 
+.game-desc {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 3px solid #395f57;
+  border-top: 3px solid #395f57;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
 .mood {
   margin-top: 90px;
   transform: translateY(0);
