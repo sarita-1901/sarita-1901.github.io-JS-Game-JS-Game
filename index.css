@@ -167,32 +167,32 @@ body .header .main__heading--sub {
   margin-top: 20px;
   width: 250px;
   height: 206px;
-  background-image: url(./Images/man-neutral1.JPG);
+  background-image: url(./images/man-neutral1.JPG);
 }
 
 .mood-disappointed {
-  background-image: url(./Images/Man-too_strong1.gif);
+  background-image: url(.images/Man-too_strong1.gif);
   margin-top: 10px;
   width: 350px;
   height: 289px;
 }
 
 .mood-silly {
-  background-image: url(./Images/man-missed-basic1.gif);
+  background-image: url(./images/man-missed-basic1.gif);
   margin-top: 10px;
   width: 350px;
   height: 289px;
 }
 
 .mood-upset {
-  background-image: url(./Images/man-without-alc1.gif);
+  background-image: url(./images/man-without-alc1.gif);
   margin-top: 10px;
   width: 350px;
   height: 289px;
 }
 
 .mood-applause {
-  background-image: url(./Images/man-applause1.gif);
+  background-image: url(./images/man-applause1.gif);
   margin-top: 10px;
   width: 350px;
   height: 206px;
